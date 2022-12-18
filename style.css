@@ -1,0 +1,134 @@
+body{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    background-color: black;
+}
+*{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+nav{
+    background-color: black;
+    width: 300px;
+    height: 100vh;
+    color: rgb(156, 150, 150);
+    display: flex;
+}
+nav ul{
+    position: fixed;
+    margin: 0;
+    list-style: none;
+}
+nav ul li{
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    font-size: larger;
+}
+.logo img{
+    width: 55px;
+    margin-right: 8px;
+}
+.logo span{
+    color: white;
+    font-weight: bolder;
+    font-size: x-large;
+}
+li:hover{
+    color: white;
+}
+
+.container{
+    margin: 0;
+    width: 100%;
+    background-color: rgb(29, 28, 28);
+}
+
+.song{
+    background-color: rgb(24, 24, 24);
+    border-radius: 5px;
+    height: 290px;
+}
+
+.songList{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    grid-gap: 7px;
+}
+
+.song img, p{
+    margin: 10px;
+    color: white;
+}
+.song img{
+    border-radius: 5px;
+    width: 200px;
+    height: 175px;
+}
+
+.content{
+    display: flex;
+    flex-direction: row;
+}
+
+#play{
+    display: inline;
+    float: top;
+    margin-top: -100px;
+    height: 50px;
+    width: 50px;
+    opacity: 0;
+    transition: width .5s, margin-top .5s, opacity .5s;
+}
+
+.bottom{
+    margin-top: 29px;
+    position: sticky;
+    bottom: 0px;
+    width: 100%;
+    height: 19vh;
+    background-color: rgb(1, 0, 19);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.icons{
+    margin: 1px;
+    display: flex;
+    flex-direction: row;
+}
+
+.gif img{
+    margin: 0;
+    position: absolute;
+    left: 3vw;
+    width: 0px;
+    height: 60px;
+    opacity: 0;
+    transition: opacity .7s, width .7s;
+}
+
+.icons i{
+    margin-left: 15px;
+    margin-right: 15px;
+}
+.bottom input{
+    width: 90%;
+}
+
+.bottom p{
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+.header h1{
+    margin-left: 10px;
+    color: rgb(205, 199, 199);
+}
+.header h1:hover{
+    cursor: pointer;
+    text-decoration:underline;
+    color: white;
+}

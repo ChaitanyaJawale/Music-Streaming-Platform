@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Left Panel containing logo, Name and Navigation Bar -->
+    <div class="leftPanel">
+    <nav>
+        <ul>
+            <li class="logo"><img src="Spotify/images/spotify.png" alt=""> <span>Spotify</span></li>
+            <li>Home</li>
+            <li>Search</li>
+            <li>Your Playlist</li>
+        </ul>
+    </nav>
+</div>
+
+
+<div class="container">
+    <div class="middleSection">
+        <div class="header">
+            <h1>Arijit Singh</h1>
+        </div>
+
+        <div class="songList">
+
+            <div class="song" onmouseover="applyHover(this)" onmouseout="removeHover(this)">
+                <img src="Spotify/images/arijit singh.jpg" alt="">
+                <div class="content">
+                <p>Ae Dil Hai Mushkil Title Track (From "Ae Dil Hai Mushkil")</p>
+                <img src="Spotify/images/play.webp" id="play" class="0" onclick="playSong(this.getAttribute('class'))">
+            </div>
+            </div>
+
+            <div class="song" onmouseover="applyHover(this)" onmouseout="removeHover(this)">
+                <img src="Spotify/images/arijit singh.jpg" alt="">
+                <div class="content">
+                <p>Phir Le Aya Dil (Reprise From "Barfi" Arijit Singh | Pritam)</p>
+                <img src="Spotify/images/play.webp" id="play" class="1" onclick="playSong(this.getAttribute('class'))">
+            </div>
+            </div>
+
+            <div class="song" onmouseover="applyHover(this)" onmouseout="removeHover(this)">
+                <img src="Spotify/images/arijit singh.jpg" alt="">
+                <div class="content">
+                <p>Channa Mereya (From "Ae Dil Hai Mushkil" Arijit Singh)</p>
+                <img src="Spotify/images/play.webp" id="play" class="2" onclick="playSong(this.getAttribute('class'))">
+            </div>
+            </div>
+
+            <div class="song" onmouseover="applyHover(this)" onmouseout="removeHover(this)">
+                <img src="Spotify/images/arijit singh.jpg" alt="">
+                <div class="content">
+                <p>Kalank - Title Track (From "Kalank" Arijit Singh | Pritam)</p>
+                <img src="Spotify/images/play.webp" id="play" class="3" onclick="playSong(this.getAttribute('class'))">
+            </div>
+            </div>
+
+            <div class="song" onmouseover="applyHover(this)" onmouseout="removeHover(this)">
+                <img src="Spotify/images/arijit singh.jpg" alt="">
+                <div class="content">
+                <p>Laal Ishq (From "Goliyon Ki Raasleela Ram-Leela") Arijit Singh</p>
+
+                <img src="Spotify/images/play.webp" id="play" class="4" onclick="playSong(this.getAttribute('class'))">
+            </div>
+            </div>
+
+            <div class="song" onmouseover="applyHover(this)" onmouseout="removeHover(this)">
+                <img src="Spotify/images/arijit singh.jpg" alt="">
+                <div class="content">
+                <p>Sanam Re (From "Sanam Re" Arijit Singh | Mithoon)</p>
+                <img src="Spotify/images/play.webp" id="play" class="5" onclick="playSong(this.getAttribute('class'))">
+            </div>
+            </div>
+
+            <div class="song" onmouseover="applyHover(this)" onmouseout="removeHover(this)">
+                <img src="Spotify/images/arijit singh.jpg" alt="">
+                <div class="content">
+                <p>Soch Na Sake (From "Airlift" Arijit Singh | Tulsi Kumar)</p>
+                <img src="Spotify/images/play.webp" id="play" class="6" onclick="playSong(this.getAttribute('class'))">
+            </div>
+            </div>
+
+            <div class="song" onmouseover="applyHover(this)" onmouseout="removeHover(this)">
+                <img src="Spotify/images/arijit singh.jpg" alt="">
+                <div class="content">
+                <p>Tu Chale (From "I" Arijit singh | Shreya Ghoshal | AR Rahman)</p>
+                <img src="Spotify/images/play.webp" id="play" class="7" onclick="playSong(this.getAttribute('class'))">
+            </div>
+            </div>
+
+            <div class="song" onmouseover="applyHover(this)" onmouseout="removeHover(this)">
+                <img src="Spotify/images/arijit singh.jpg" alt="">
+                <div class="content">
+                <p>Tujhe Kitna Chahne Lage (From "Kabir Singh" Arijit Singh | Mithoon)</p>
+                <img src="Spotify/images/play.webp" id="play" class="8" onclick="playSong(this.getAttribute('class'))">
+            </div>
+            </div>
+
+            <div class="song" onmouseover="applyHover(this)" onmouseout="removeHover(this)">
+                <img src="Spotify/images/arijit singh.jpg" alt="">
+                <div class="content">
+                <p>Khamoshiyan (From "Khamoshiyan") Arijit Singh | Jeet Ganguly</p>
+                <img src="Spotify/images/play.webp" id="play" class="9" onclick="playSong(this.getAttribute('class'))">
+            </div>
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <div class="bottom">
+        <input type="range" min="0" max="100" value = "0" id="progrssBar">
+
+        <p id="Title">Ae Dil Hai Mushkil Title Track (From "Ae Dil Hai Mushkil")</p>
+
+        <div class="icons">
+            <div class="gif"><img src="Spotify/images/gif.gif" id="gif"></div>
+
+            <i class="fa-solid fa-backward-step fa-3x" id="previous" onclick="previousSong()"></i>
+            <i class="fa-solid fa-circle-play fa-3x" id="masterPlay"></i>
+            <i class="fa-solid fa-forward-step fa-3x" id="next" onclick="nextSong()"></i>
+        </div>
+        
+    </div>
+</div>
+    <script src="https://kit.fontawesome.com/0b8d49c94c.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+</html>
