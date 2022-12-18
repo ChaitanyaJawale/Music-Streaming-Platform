@@ -23,16 +23,16 @@ let progressBar = document.getElementById('progrssBar');
 let songIndex = 0;
 
 let songArr = [
-    {songName:'Ae Dil Hai Mushkil Title Track (From "Ae Dil Hai Mushkil")', songPath:'Spotify/images/songs/Ae Dil Hai Mushkil.mp3'},
-    {songName:'Phir Le Aya Dil (Reprise From "Barfi" Arijit Singh | Pritam)', songPath:'Spotify/images/songs/Phir Le Aya Dil.mp3'},
-    {songName:'Channa Mereya (From "Ae Dil Hai Mushkil" Arijit Singh)', songPath:'Spotify/images/songs/Channa Mereya.mp3'},
-    {songName:'Kalank - Title Track (From "Kalank" Arijit Singh | Pritam)', songPath:'Spotify/images/songs/Kalank.mp3'},
-    {songName:'Laal Ishq (From "Goliyon Ki Raasleela Ram-Leela" Arijit Singh)', songPath:'Spotify/images/songs/Laal Ishq.mp3'},
-    {songName:'Sanam Re (From "Sanam Re" Arijit Singh | Mithoon)', songPath:'Spotify/images/songs/Sanam Re.mp3'},
-    {songName:'Soch Na Sake (From "Airlift" Arijit Singh | Tulsi Kumar)', songPath:'Spotify/images/songs/Soch na sake.mp3'},
-    {songName:'Tu Chale (From "I" Arijit singh | Shreya Ghoshal | AR Rahman)', songPath:'Spotify/images/songs/Tu Chale.mp3'},
-    {songName:'Tujhe Kitna Chahne Lage (From "Kabir Singh" Arijit Singh | Mithoon)', songPath:'Spotify/images/songs/Tujhe kitna chahne lage .mp3'},
-    {songName:'Khamoshiyan (From "Khamoshiyan") Arijit Singh | Jeet Ganguly', songPath:'Spotify/images/songs/Khamoshiyan.mp3'}
+    {songName:'Ae Dil Hai Mushkil Title Track (From "Ae Dil Hai Mushkil")', songPath:'Ae Dil Hai Mushkil.mp3'},
+    {songName:'Phir Le Aya Dil (Reprise From "Barfi" Arijit Singh | Pritam)', songPath:'Phir Le Aya Dil.mp3'},
+    {songName:'Channa Mereya (From "Ae Dil Hai Mushkil" Arijit Singh)', songPath:'Channa Mereya.mp3'},
+    {songName:'Kalank - Title Track (From "Kalank" Arijit Singh | Pritam)', songPath:'Kalank.mp3'},
+    {songName:'Laal Ishq (From "Goliyon Ki Raasleela Ram-Leela" Arijit Singh)', songPath:'Laal Ishq.mp3'},
+    {songName:'Sanam Re (From "Sanam Re" Arijit Singh | Mithoon)', songPath:'Sanam Re.mp3'},
+    {songName:'Soch Na Sake (From "Airlift" Arijit Singh | Tulsi Kumar)', songPath:'Soch na sake.mp3'},
+    {songName:'Tu Chale (From "I" Arijit singh | Shreya Ghoshal | AR Rahman)', songPath:'Tu Chale.mp3'},
+    {songName:'Tujhe Kitna Chahne Lage (From "Kabir Singh" Arijit Singh | Mithoon)', songPath:'Tujhe kitna chahne lage .mp3'},
+    {songName:'Khamoshiyan (From "Khamoshiyan") Arijit Singh | Jeet Ganguly', songPath:'Khamoshiyan.mp3'}
 ]
 
 masterPlay.addEventListener('click', function masterplay(){
